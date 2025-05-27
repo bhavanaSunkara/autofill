@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  font-family: -apple-system, Blink ChunksMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.list-group-item {
+  font-size: 1rem;
+}
+
+/* Hide scrollbar for Webkit browsers (Chrome, Safari) */
+.search-container ul::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  .search-container {
+    width: 90vw !important; /* Ensure responsiveness on mobile */
+  }
+
+  .form-control-lg {
+    font-size: 1rem;
+    padding: 0.5rem 2.5rem 0.5rem 2.5rem; /* Adjust padding for mobile */
+  }
+
+  .bi-search {
+    font-size: 1rem !important; /* Smaller icon on mobile */
+    left: 10px !important;
+  }
+
+  .btn-sm {
+    font-size: 0.875rem !important; /* Smaller clear button on mobile */
+    padding: 0.25rem 0.5rem !important;
+  }
+
+  h2 {
+    font-size: 1.5rem; /* Smaller heading on mobile */
+  }
+
+  .list-group-item {
+    font-size: 0.875rem; /* Smaller text in suggestions */
+  }
+}
